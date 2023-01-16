@@ -6,7 +6,7 @@
   background-position: center;
   color: $siniopastel;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  height: 600px;
+  height: 400px;
   margin: 0!important;
 
 }
@@ -42,7 +42,7 @@
 }
 @media (max-width: 600px) {
   .cover h1 {
-    font-size: 24px;
+    font-size: 36px;
   }
 }
 @media (max-width: 600px) {
@@ -52,13 +52,13 @@
   }
 }
 @media (max-width: 600px) {
-  .cover .text-center {
+  .cover .text-center .profile {
     flex-direction: column;
   }
 }
 @media (max-width: 600px) {
   .cover p {
-    font-size: 18px;
+    font-size: 24px;
   }
 }
 /* Card questions*/
@@ -100,14 +100,15 @@ color: $bebesionio;
 }
 
 .title-heading{
-  font-size: 2em;
+  font-size: 28px ;
   text-align: center;
   margin: 4%;
   font-weight: bold;
   color:$siniosvetlo;
-
 }
-
+.title-heading:hover {
+  color: $julto;
+}
 
 /* Why me Canva*/
 .container {
@@ -600,22 +601,18 @@ color: $bebesionio;
   -o-transform: $prop;
   transform: $prop;
 }
-// map
-// .main-container {
-//   display: flex;
-// }
-
-// #map {
-//   height: 300px;
-// }
 
 .contact {
   flex-grow: 1;
   display: grid;
   grid-template-columns: 1 fr;
   grid-gap: 16px;
+  background-color: $siniotumno;
 
   // padding: 16px;
+}
+.color-container {
+  background-color: $siniotumno !important;
 }
 .contact > img {
 width: 100%;

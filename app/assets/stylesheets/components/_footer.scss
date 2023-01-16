@@ -1,5 +1,5 @@
 .footer {
-  background: $jeniblue;
+  background: $siniotumno;
   display: flex;
   flex-direction: column; /* this makes the divs stack vertically */
   align-items: center; /* this centers the divs horizontally */
@@ -10,20 +10,20 @@
   margin: 10px 0;
 }
 .footer-links a {
-  color: $gold;
+  color: $julto;
   text-decoration: none;
   font-size: 42px;
 }
 .footer-links a:hover {
-color: $poudre;
+color: white;
 }
 .footer-copyright {
-  color: $gold;
+  color: white;
   margin-bottom: 20px;
 }
 
 .footer-copyright:hover {
-  color: $poudre;
+  color: $julto;
 }
 
 @media (max-width: 600px) {
