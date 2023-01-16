@@ -14,12 +14,8 @@ Evgenium.destroy_all
 
 puts 'Seed: Creating Jeni...'
 
-
+file = URI.open("https://res.cloudinary.com/dygywvyiq/image/upload/v1673886807/profile-jeni_dskn2p.png")
 evgenium = Evgenium.new(address: "1000 Sofia, Bulgaria")
+evgenium.photo.attach(io: file, filename: "profile.png", content_type: "image/png")
 evgenium.save!
-evgenium2 = Evgenium.new(address: "7500 Paris, France")
-evgenium2.save!
-
-
-
 puts 'Seed: Jeni was born!'

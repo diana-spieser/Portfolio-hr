@@ -47,6 +47,6 @@ class EvgeniaController < ApplicationController
   private
 
   def evgenium_params
-    params.require(:evgenium).permit(:address)
+    params.require(:evgenium).permit(:address, :photo)
   end
 end
