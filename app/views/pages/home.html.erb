@@ -8,7 +8,7 @@
 </div><!--end div Banner-->
 <!--Card questions-->
 <div class="container" style="margin-top:30px">
-  <div class="row">
+  <div class="row justify-content-center">
     <div class = "col-lg-4 col-sm-4 col-md-4 col-xl-4 col-xs-12">
       <div class="card-question">
         <div class="card-question-body">
@@ -16,7 +16,6 @@
           <div class="card-question-image" style="color:#00426A;">
             <i class="fas fa-bullseye fa-5x"></i>
           </div>
-          <p class="card-question-text"></p>
           <br>
         </div>
       </div>
@@ -28,11 +27,11 @@
           <div class="card-question-image" style="color: #FAA526;">
             <i class="fas fa-laptop-code fa-5x"></i>
           </div>
-          <p class="card-question-text "></p>
           <br>
         </div>
       </div>
     </div>
+      <div class="row">
     <div class = "col-lg-4 col-sm-4 col-md-4 col-xl-4 col-xs-12">
       <div class="card-question">
         <div class="card-question-body">
@@ -40,11 +39,33 @@
           <div class="card-question-image" style="color: #0E787A;">
             <i class="fas fa-chalkboard-teacher fa-5x"></i>
           </div>
-          <p class="card-question-text"></p>
           <br>
         </div>
       </div>
     </div>
+    <div class = "col-lg-4 col-sm-4 col-md-4 col-xl-4 col-xs-12">
+      <div class="card-question">
+        <div class="card-question-body">
+          <h4 class="card-question-title">Need a professional branding?</h4>
+          <div class="card-question-image" style="color: #006E99;">
+            <i class="fa-solid fa-user-tie fa-5x"></i>
+          </div>
+          <br>
+        </div>
+      </div>
+    </div>
+    <div class = "col-lg-4 col-sm-4 col-md-4 col-xl-4 col-xs-12">
+      <div class="card-question">
+        <div class="card-question-body">
+          <h4 class="card-question-title">Need advice?</h4>
+          <div class="card-question-image" style="color: #7CC4C6;">
+            <i class="fa-solid fa-handshake-angle fa-5x"></i>
+          </div>
+          <br>
+        </div>
+      </div>
+    </div>
+     </div>
   <div class="row">
     <div class="col-12">
       <div class="title-heading">
@@ -55,68 +76,63 @@
   </div>
 </div><!--End div Card questions-->
 <!--Why me Canva-->
-<div class="container">
-    <%= image_tag 'why-me.png', class: "img-fluid why", height: "500px", alt: "why-me" %>
-</div><!--en div Why me Canva-->
-
-<!--Professional branding-->
-<section class="hero-unit-cards">
- <div class="row">
-    <div class="large-12 columns">
-      <hgroup>
-      <br>
-      <br>
-      <br>
-      <center><h1>Need a professional branding ?</h1></center>
-
-      </hgroup>
-      <div class="hero-section">
-      <div class="card-grid">
-    <a class="card" href="javascript:void(0);">
-      <div class="card__background" style="background-image: url(https://res.cloudinary.com/dygywvyiq/image/upload/v1673772520/cv_kvsha5.png)"></div>
-        <div class="card__content">
-        <h3 class="card__heading">&nbsp;&nbsp;&nbsp;New CV</h3>
-      </div>
-    </a>
-    <a class="card" href="javascript:void(0);">
-      <div class="card__background" style="background-image: url(https://res.cloudinary.com/dygywvyiq/image/upload/v1673772520/portfolio_wbzrvy.png)"></div>
-      <div class="card__content">
-        <h3 class="card__heading">Portfolio</h3>
-      </div>
-    </a>
-    <a class="card" href="javascript:void(0);">
-      <div class="card__background" style="background-image: url(https://res.cloudinary.com/dygywvyiq/image/upload/v1673772520/linkedin_klvgth.png)"></div>
-        <div class="card__content">
-        <h3 class="card__heading">LinkedIn page</h3>
-      </div>
-    </li>
-    <a class="card" href="javascript:void(0);">
-      <div class="card__background" style="background-image: url(https://res.cloudinary.com/dygywvyiq/image/upload/v1673772520/cover-letter_hbrbqc.png)"></div>
-      <div class="card__content">
-      <h3 class="card__heading">Cover letter</h3>
-      </div>
-    </a>
-  <div>
+<div id=container-why>
+  <div id=flip>
+    <div><div>Why</div></div>
+    <div><div>Choose</div></div>
   </div>
-  </div>
+  Me?
+        <%= image_tag 'why-me.png', class: "img-fluid why", height: "500px", alt: "why-me" %>
 
 </div>
-</section><!--end Professional branding-->
 
+<%# <div class="container">
+    <%= image_tag 'why-me.png', class: "img-fluid why", height: "500px", alt: "why-me" %>
+</div><!--en div Why me Canva--> %>
+
+<!--Professional branding-->
+<div class="cards-branding" id="services">
+  <div class="card-branding">
+    <div class="card_img card1">
+      </div>
+      <h3>-NEW CV-</h3>
+        <div class="line">
+    </div>
+  </div>
+<div class="card-branding">
+    <div class="card_img card2">
+    </div>
+      <h3>-PORTFOLIO-</h3>
+      <div class="line">
+    </div>
+</div>
+  <div class="card-branding">
+    <div class="card_img card3">
+    </div>
+    <h3>-LINKEDIN PAGE-</h3>
+    <div class="line">
+  </div>
+</div>
+<div class="card-branding">
+  <div class="card_img card4">
+</div>
+    <h3>-COVER LETTER-</h3>
+    <div class="line">
+    </div>
+    <br>
+    </div>
+</div><!--end divProfessional branding-->
 
 
 <!-- Hero Unit -->
 <section class="hero-unit">
-
   <div class="row">
     <div class="large-12 columns">
       <hgroup>
-        <center><h1>Need advice ?</h1></center>
+        <center><h1>-Professional advice- </h1></center>
       </hgroup>
       <br>
       <br>
-
-
       <ul class="small-block-grid-2 medium-block-grid-3 flip-cards">
 
         <li ontouchstart="this.classList.toggle('hover');">
@@ -213,7 +229,7 @@
  <div class="row hero-unit">
     <div class="large-12 columns">
       <hgroup>
-        <center><h1>Contact me</h1></center>
+        <center><h1 id="contact">-Contact me-</h1></center>
       </hgroup>
       <br>
       <br>
