@@ -287,7 +287,7 @@ DEPENDENCIES
   geocoder
   jbuilder
   jsbundling-rails
-  mail_form (~> 1.9)
+  mail_form
   pg (~> 1.1)
   puma (~> 5.0)
   rails (~> 7.0.4)
