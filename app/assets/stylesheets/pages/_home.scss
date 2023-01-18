@@ -61,6 +61,7 @@
     font-size: 24px;
   }
 }
+
 /* Card questions*/
 
 .card-question-question{
@@ -116,11 +117,11 @@ color: $bebesionio;
 .title-heading:hover {
   color: $julto;
 }
-/* Why me Canva*/
+/* WHY ME*/
 #container-why {
   color: #002E4C;
   text-transform: uppercase;
-  font-size:36px;
+  font-size:24px;
   font-weight:bold;
   position:sticky;
   width:100%;
@@ -129,6 +130,83 @@ color: $bebesionio;
   text-align: center;
 
 }
+.container-why-me {
+  // max-width: 1230px;
+  margin: 0 auto;
+  // padding: 30px 15px;
+
+  color:  #7CC4C6;
+  font-size: 18px;
+}
+
+
+.p-20 {
+  padding: 5px;
+}
+
+
+.primary {
+  border: 3px solid white;
+  border-radius: 5px;
+  background-color:  #7CC4C6;
+  color: #fff;
+  box-shadow: 6px 6px 8px 2px white;
+}
+
+header h1 {
+ text-align: center;
+  margin: 1rem 0 1.2rem 0;
+}
+header p {
+  // max-width: 550px;
+  margin: 1rem auto;
+  text-align: center;
+}
+
+header h3 {
+margin-top: 35px;
+text-align: center;
+margin: 1rem 0 1.2rem 0;
+}
+
+#l0 {
+  color:  white;
+}
+
+#l1 {
+  color:#0E787A ;
+}
+
+#l2 {
+  color:#0E787A ;
+}
+
+#l3 {
+  color:#00426A; ;
+}
+
+#l4 {
+  color:#00426A; ;
+}
+
+#l5 {
+  color:  white;
+}
+#l0:hover,  #l5:hover  {
+  color: $julto;
+}
+#l1:hover,#l2:hover {
+  color: $siniotumno;
+}
+
+#l3:hover, #l4:hover {
+  color: $siniopastel;
+}
+
+.fa-angles-down:hover {
+  color: $julto;
+}
+
 
 #flip {
   height:50px;
@@ -154,7 +232,7 @@ color: $bebesionio;
   background:#FAA526;
 }
 #flip div:last-child div {
-  background:#7CC4C6;
+  background: $drugosinio;
 }
 
 @keyframes show {
@@ -223,6 +301,9 @@ color: $bebesionio;
   box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
 }
 
+.cards-branding h3 {
+  color: $siniotumno !important;
+}
 @media screen and (max-width: 1200px){
   .card-branding{
   width:30%;
@@ -691,8 +772,12 @@ color: $bebesionio;
   font-size: 30px;
   font-weight: 600;
   margin: 0 0 35px;
+  color: white !important;
 }
 
+.section-title:hover {
+  color: $julto !important;
+}
 .sec-pad {
   padding: 60px 0px 0px;
   margin: 50px 0;
@@ -726,7 +811,7 @@ color: $bebesionio;
   text-decoration: none;
 }
 
-.contact-sec .contact-ul li b:hover {
+.contact-ul:hover {
   color: $julto;
 }
 
