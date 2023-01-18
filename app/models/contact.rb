@@ -6,11 +6,11 @@ class Contact < MailForm::Base
 
   def headers
     {
-      to: "dianaspieser@gmail.com", # change this to be the email you want sent to
+      to: "evgenia_manolova@yahoo.com", # change this to be the email you want sent to
       subject: "New message from Your website",
       from: "admin@evgenia-manolova.com",  # change this to be the email it is coming from
       reply_to: %("#{name}" <#{email}>)
     }
   end
 end
-# evgenia_manolova@yahoo.com
+#
