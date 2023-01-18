@@ -1,24 +1,38 @@
-<div class="px-8 py-6 rounded-md shadow bg-white">
-    <h1 class="text-4xl text-center">Contact me</h1>
-    <hr>
-    <p>I'd love to hear from you. Send me a message below.</p>
-
-    <%= form_for @contact do |form| %>
-
-    <% if @contact.errors.any? %>
-        <div id="error_explanation" class="bg-rose-200 pt-3 pb-1 mb-4 px-4 rounded-md">
-            <div class="font-bold text-rose-700 text-sm pb-4"><%= pluralize(@contact.errors.count, "error") %> prohibited this page from being saved:</div>
-
-            <ul class="pb-0 mb-0">
-                <% @contact.errors.each do |error| %>
-                    <li class="text-rose-600 pl-4 text-sm"><%= error.full_message %></li>
-                <% end %>
-            </ul>
-        </div>
-    <% end %>
 
 
-<div class="col-md-6">
+
+
+    <div style="text-align: center; margin-top: 20px;">
+      <p> Copyright &copy;
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        All rights reserved | Evgenia Manolova
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-contact">
+<div class="contact">
+<%= image_tag 'contact.png', alt: "why-me" %>
+</div>
+<div class="container">
+  <h1 id="contact-title">Contact Form</h1>
+  <%= form_for @contact do |f| %>
+    <div class="col-md-6 formcontact">
       <%= f.label :name %></br>
       <%= f.text_field  :name, required: true, class: "contact-form-text-area" %></br>
 
@@ -37,4 +51,5 @@
       <%= f.submit 'Send Message', class: 'btn btn-primary' %>
     </div>
   <% end %>
+</div>
 </div>

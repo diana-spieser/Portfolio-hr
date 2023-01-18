@@ -287,7 +287,7 @@ color: $bebesionio;
   color: white;
   font-size:18px;
   line-height:90%;
-  border-radius:30px;
+  // border-radius:30px;
   width:150px;
   float:right;
   margin-top:30px;
@@ -682,60 +682,207 @@ color: $bebesionio;
   transform: $prop;
 }
 
-.contact {
-  flex-grow: 1;
-  display: grid;
-  grid-template-columns: 1 fr;
-  grid-gap: 16px;
+
+
+/* CONTACT ME SECTION */
+
+.section-title {
+  position: relative;
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0 0 35px;
+}
+
+.sec-pad {
+  padding: 60px 0px 0px;
+  margin: 50px 0;
+}
+
+.contact-sec {
+  align-items: center;
+  display: flex;
   background-color: $siniotumno;
 
-  // padding: 16px;
 }
-.color-container {
-  background-color: $siniotumno !important;
+ ul {
+  list-style: none;
 }
-.contact > img {
-width: 100%;
+.contact-sec .contact-ul li,
+.contact-ul b {
+  font-size: 20px;
+  margin: 10px 0;
+  word-wrap: break-word;
+  margin-bottom: 0!important;
+}
 
+.contact-sec .contact-ul i {
+  font-size: 18px;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 50%;
 }
-.container{
+.contact-detail a {
+  color: white;
+  text-decoration: none;
+}
+
+.contact-sec .contact-ul li b:hover {
+  color: $julto;
+}
+
+.contact-sec .contact-ul li .fa-location-dot {
+  color: $bebesionio;
+  border: 2px solid $bebesionio;
+}
+
+.contact-sec .contact-ul li .fa-phone {
+  color: $julto;
+  border: 2px solid $julto;
+}
+
+.contact-sec .contact-ul li .fa-envelope {
+  color: $bebesionio;
+  border: 2px solid $bebesionio;
+}
+
+.contact-detail span {
+  width: 400px;
   display: flex;
+  justify-content: center;
+}
+.contact-detail span a {
+  font-size: 40px;
+  padding: 6px 12px;
+  color: $julto;
+
+  margin: 0px 5px;
+
 }
 
-#mapbox {
-  position: sticky;
-  // top: 15px;
-  right: 0;
+.contact-detail span .linkedin:hover {
+  color: white;
+  background-color: $julto;
+}
+
+.contact-detail span .viber:hover {
+  color: white;
+  background-color: $julto;
+}
+
+.contact-detail span .whatsapp:hover {
+  color: white;
+  background-color: $julto;
+
+}
+form.contFrm {
+  max-width: 346px;
+  margin: auto;
+}
+
+.inptFld {
   width: 100%;
-
-  // margin-top: 20px;
-}
-/*Smallest device*/
-@media (min-width: 100px) and (max-width: 575px) {
-  .cards {
-    grid-template-columns: 1fr;
-  }
-  #mapbox {
-display: none;
-  }
+  height: 50px;
+  border: 0;
+  margin: 0 0 10px;
+  padding: 0 20px;
+  font-size: 16px;
+  color: $siniotumno;
 }
 
-/*Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) {
-  .cards {
-    grid-template-columns: 1fr;
-  }
-  #mapbox {
-    display: none;
-}
+.inptFld:focus {
+  outline-offset: -4px;
+  outline: 1px solid $julto;
 }
 
-/*Medium devices (tablets, 768px and up)*/
-@media (min-width: 1200px) {
-  .cards {
-    grid-template-columns: 1fr;
+.contFrm textarea {
+  height: 75px;
+  padding-top: 10px;
+}
+.inptBtn {
+  height: 50px;
+  border: 0;
+  background: $siniopastel;
+  font-size: 14px;
+  color: #fff;
+  margin: auto;
+  letter-spacing: 1px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 200px;
+}
+.inptBtn:hover {
+  background-color: white;
+  color: $siniopastel;
+}
+/* Responcive css Start */
+
+@media (max-width: 991px) {
+  .sec-pad {
+    padding: 20px 0 0px;
   }
-  #mapbox {
-    display: block;
+
+  .contact-sec .contact-ul li,
+  .contact-ul b {
+    font-size: 18px;
   }
+
+  .contact-sec .contact-ul i {
+    font-size: 14px;
+    padding: 6px;
+    margin-right: 6px;
+  }
+
+  .inptFld {
+    height: 40px;
+    margin: 0 0 10px;
+    padding: 0 14px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact-detail span {
+    width: auto;
+  }
+  .contact-detail span a {
+    font-size: 18px;
+    padding: 5px 10px;
+    color: #000;
+    border-radius: 50%;
+    margin: 0px 5px 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  .section-title {
+    font-size: 26px;
+    font-weight: 500;
+  }
+
+
+  .contact-sec .contact-ul i {
+    border: none;
+  }
+  .inptFld {
+    height: 36px;
+    margin: 0 0 8px;
+    padding: 0 14px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-sec .contact-ul li,
+  .contact-ul b {
+    font-size: 16px;
+  }
+}
+section {
+  margin-bottom: 0px !important;
+}
+.formulaire {
+  margin: 5px;
+}
+.formulaire-message {
+  height: 100px;
 }

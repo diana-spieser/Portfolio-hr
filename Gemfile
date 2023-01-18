@@ -31,8 +31,7 @@ gem "geocoder"
 
 gem "cloudinary"
 
-gem 'mail_form', '~> 1.9'
-
+gem 'mail_form'
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
