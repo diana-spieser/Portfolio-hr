@@ -1,0 +1,11 @@
+<p style="color: #0E787A;">Giving feedback turns out to be the unnatural atomic building block atop which the unnatural skill set of management gets built," wrote Andreessen Horowitz co-founder and venture capitalist Ben Horowitz.
+
+Despite being the number one driver of our personal and professional development, effective and actionable feedback can be incredibly hard to give. Emotions get in the way, expectations aren’t properly set, and wrong language is used—each of which strip away any motivation we have to better ourselves and our work.
+
+Automation can help you handle feedback like a pro
+Learn how</p>
+<% @works.each do |work| %>
+<%= work.name %>
+<%= link_to "I understand let's go!", work_path(work), class: "btn btn-blue"%>
+<%= link_to "Back to my Homepage", root_path, class:"btn btn-blue" %></center>
+<%end  %>

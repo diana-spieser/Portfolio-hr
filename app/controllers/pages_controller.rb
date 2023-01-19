@@ -2,18 +2,18 @@ class PagesController < ApplicationController
   skip_before_action :authenticate_user!, only: [ :home, :about]
 
   def home
+
+    # @review = Review.new
+    # @reviews = @evgenium.reviews
     @contact = Contact.new
-    @evgenia = Evgenium.all
+    @works = Work.all
+    @work = Work.new
+    # @works = @work.reviews;
+    @review = Review.new
+    @reviews = Review.all
+
     # The `geocoded` scope filters only flats with coordinates
-    @markers = @evgenia.geocoded.map do |evgenium|
-      {
-        lat: evgenium.latitude,
-        lng: evgenium.longitude
-      }
-    end
   end
 
-  def about
-  end
 
 end
