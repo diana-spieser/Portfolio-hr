@@ -20,7 +20,7 @@
         </div>
       </div>
     </div>
-    <div class = "col-lg-4 col-sm-4 col-md-4 col-xl-4 col-xs-12">
+    <%# <div class = "col-lg-4 col-sm-4 col-md-4 col-xl-4 col-xs-12">
       <div class="card-question">
         <div class="card-question-body">
           <h4 class="card-question-title">Worried about the job interview?</h4>
@@ -30,8 +30,8 @@
           <br>
         </div>
       </div>
-    </div>
-      <div class="row">
+    </div> %>
+      <%# <div class="row"> %>
     <div class = "col-lg-4 col-sm-4 col-md-4 col-xl-4 col-xs-12">
       <div class="card-question">
         <div class="card-question-body">
@@ -43,7 +43,7 @@
         </div>
       </div>
     </div>
-    <div class = "col-lg-4 col-sm-4 col-md-4 col-xl-4 col-xs-12">
+    <%# <div class = "col-lg-4 col-sm-4 col-md-4 col-xl-4 col-xs-12">
       <div class="card-question">
         <div class="card-question-body">
           <h4 class="card-question-title">Need a professional branding?</h4>
@@ -65,36 +65,18 @@
         </div>
       </div>
     </div>
-    </div>
+    </div> %>
   <div class="row">
     <div class="col-12">
       <div class="title-heading">
           If the answer is YES,  you are at the right place!
+          <p style="color: #002E4C;" id="l5">Find out what we can do together</p>
+    <center><h5><i class="fa-solid fa-angles-down"></i></h5></center>
         </div>
       </div>
     </div>
   </div>
 </div><!--End div Card questions-->
-<!--Why me Canva-->
-<div class="container-why-me">
-  <header class="primary p-20">
-  <div id=container-why>
-  <div id=flip>
-    <div><div>Why</div></div>
-    <div><div>WHY</div></div>
-  </div>
-  Me?
-</div>
-    <h3 id="l0">Because...</h3>
-<p id="l1">I am half-time recruiter, half-time HR consultant.
-<p id="l2">Have been working as an HR for international companies for more than 10 years.</p>
-<p id="l3">Living in France or in Bulgaria, I was mostly enjoying the recruitment part, but being an HR also means that I had to manage all staff matters.</p>
-
-<p id="l4">So, I decided that I would like to share  all I have learnt in terms of employee-employer relations, because, just like you, I was an employee. </p>
-    <p id="l5">Find out what we can do together</p>
-    <center><h5><i class="fa-solid fa-angles-down"></i></h5></center>
-  </header>
-</div>
 
 
 <%# <div class="container">
@@ -232,6 +214,25 @@
   </div>
 </section>
 
+<!--Why me Canva-->
+<div class="container-why-me">
+  <header class="primary p-20">
+  <div id=container-why>
+  <div id=flip>
+    <div><div>Why</div></div>
+    <div><div>WHY</div></div>
+  </div>
+  Me?
+</div>
+    <h3 id="l0">Because...</h3>
+<p id="l1">I am half-time recruiter, half-time HR consultant.
+<p id="l2">Have been working as an HR for international companies for more than 10 years.</p>
+<p id="l3">Living in France or in Bulgaria, I was mostly enjoying the recruitment part, but being an HR also means that I had to manage all staff matters.</p>
+
+<p id="l4">So, I decided that I would like to share  all I have learnt in terms of employee-employer relations, because, just like you, I was an employee. </p>
+
+  </header>
+</div>
 <section id="testimonials">
         <!--heading--->
         <div class="testimonial-heading">
@@ -290,7 +291,8 @@
         <div class="contact-detail">
           <h1 class="section-title">&nbsp;&nbsp;&nbsp;Contact me</h1>
           <ul class="contact-ul">
-          <li>Evgenia Manolova HR Consultant</li>
+          <b><li>Evgenia Manolova </li></b>
+         <b><li>HR Consultant</li></b>
             <%# <li><i class="fa fa-location-dot"></i> Paris, France</li>
             <li> %>
               <i class="fa fa-phone"></i>
@@ -334,7 +336,7 @@
     </div>
             <div class="col-12">
 
-              <center><%= f.submit 'Send Message', class: 'inptBtn' %></center>
+          &nbsp; &nbsp; &nbsp;<%= f.submit 'Send Message', class: 'inptBtn' %>
             </div>
           </div>
 <% end %>
