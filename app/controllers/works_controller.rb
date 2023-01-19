@@ -1,5 +1,7 @@
 class WorksController < ApplicationController
   before_action :set_work, only: %i[ show edit update destroy ]
+  skip_before_action :authenticate_user!, only: [ :index, :show]
+
 
   # GET /works
   def index
