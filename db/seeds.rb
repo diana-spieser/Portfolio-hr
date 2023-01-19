@@ -9,13 +9,19 @@ require "open-uri"
 
 puts 'Seed: Deleting existing files...'
 
-Evgenium.destroy_all
+Work.destroy_all
+User.destroy_all
 
+puts 'Seed: Creating Users...'
 
-puts 'Seed: Creating Jeni...'
+User.create!(email: "dianaspieser@gmail.com", password: "password", admin: true)
+User.create!(email: "evgenia_manolova@yahoo.com", password: "password", admin: true)
 
-file = URI.open("https://res.cloudinary.com/dygywvyiq/image/upload/v1673886807/profile-jeni_dskn2p.png")
-evgenium = Evgenium.new(address: "1000 Sofia, Bulgaria")
-evgenium.photo.attach(io: file, filename: "profile.png", content_type: "image/png")
-evgenium.save!
-puts 'Seed: Jeni was born!'
+puts 'Seed: Users created...'
+
+puts 'Seed: Creating Work...'
+
+feedback = Work.create!(name: "Feedback", description: "Your feedback")
+puts 'Seed: Work created...'
+
+puts 'Seed: End All Good...'

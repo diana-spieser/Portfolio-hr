@@ -232,6 +232,55 @@
   </div>
 </section>
 
+<section id="testimonials">
+        <!--heading--->
+        <div class="testimonial-heading">
+            <span>Feedback</span>
+            <h4>form my customers</h4>
+        </div>
+        <!--testimonials-box-container------>
+        <div class="testimonial-box-container">
+            <!--BOX-1-------------->
+<% @reviews.each do |review| %>
+            <div class="testimonial-box">
+                <!--top------------------------->
+                <div class="box-top">
+                    <!--profile----->
+                    <div class="profile">
+                        <!--img---->
+                        <%# <div class="profile-img">
+                            <img src="https://cdn3.iconfinder.com/data/icons/avatars-15/64/_Ninja-2-512.png" />
+                        </div> %>
+                        <!--name-and-username-->
+                        <div class="name-user">
+                            <strong><%= review.name %></strong>
+                            <%# <span>@liammendes</span> %>
+                        </div>
+                    </div>
+                    <!--reviews------>
+                    <div class="reviews">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+
+                    </div>
+                </div>
+                <!--Comments---------------------------------------->
+                <div class="client-comment">
+                    <p><%= review.content %></p>
+                </div>
+            </div>
+        <% end %>
+
+                </div>
+            </div>
+        </div>
+      <center> <%= link_to "Add your feedback", works_path(@works), class: "btn btn-blue" %></center>
+
+      </section>
+
 
 <footer>
 <section class="contact-sec sec-pad" id="contact">
@@ -290,6 +339,8 @@
           </div>
 <% end %>
 </div>
+<div>
+
   <%# </div>
     </div>
     </div> %>
