@@ -284,7 +284,12 @@
 
       </section>
 
-
+  <div class="container-alert">
+  <br>
+  <% flash.each do |key, message| %>
+    <p class="alert alert-<%= key %>"><%= message %></p>
+  <% end %>
+</div>
 <footer>
 <section class="contact-sec sec-pad" id="contact">
   <div class="container">
@@ -294,7 +299,7 @@
           <h1 class="section-title">&nbsp;&nbsp;&nbsp;Contact me</h1>
           <ul class="contact-ul">
           <b><li>Evgenia Manolova </li></b>
-         <b><li>HR Consultant</li></b>
+        <b><li>HR Consultant</li></b>
             <%# <li><i class="fa fa-location-dot"></i> Paris, France</li>
             <li> %>
               <i class="fa fa-phone"></i>
