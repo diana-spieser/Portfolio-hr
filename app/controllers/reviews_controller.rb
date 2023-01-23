@@ -25,7 +25,7 @@ class ReviewsController < ApplicationController
     else
         @reviews = Review.all;
     end
- end
+  end
   private
 
   def set_work

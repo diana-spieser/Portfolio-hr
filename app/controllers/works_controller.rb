@@ -46,13 +46,12 @@ class WorksController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
+
   def set_work
     @work = Work.find(params[:id])
-    end
+  end
 
-    # Only allow a list of trusted parameters through.
   def work_params
     params.require(:work).permit(:name, :address)
-    end
+  end
 end
