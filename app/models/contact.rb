@@ -6,10 +6,9 @@ class Contact < MailForm::Base
 
   def headers
     {
-      to: "evgenia_manolova@yahoo.com", # change this to be the email you want sent to
-      subject: "Railscoder Contact Form",
-      from: "evgenia_manolova@yahoo.com",  # change this to be the email it is coming from
-      reply_to: %("#{name}" <#{email}>)
+      :subject => "Contact Form Inquiry",
+      :to => "evgenia_manolova@yahoo.com",
+      :from => %("#{name}" <#{email}>)
     }
   end
 end
