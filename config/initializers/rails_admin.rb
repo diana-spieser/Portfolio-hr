@@ -13,7 +13,7 @@ RailsAdmin.config do |config|
     end
   end
 
-  config.included_models = [ "Review", "User" ]
+  config.included_models = [ "Review", "User", "Work" ]
   ### Popular gems integration
 
   ## == Devise ==
