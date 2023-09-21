@@ -32,13 +32,13 @@ To run the portfolio website locally, follow these steps:
 1. Clone this repository to your local machine:
    
 ```bash
-  git clone https://github.com/diana-spieser/Hr-portfolio.git
+  git clone https://github.com/diana-spieser/Portfolio-hr.git
   ```
   
 2. Change the project directory
 
  ```bash
-  cd Hr-portfolio
+  cd Portfolio-hr
 ```
 
 3. Create , seed, migrathe your db
