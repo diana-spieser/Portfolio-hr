@@ -29,21 +29,37 @@ Please make sure to update tests as appropriate.
 
 To run the portfolio website locally, follow these steps:
 
-1. Clone the repository to your local machine:
+1. Clone this repository to your local machine:
+   
+```bash
+  git clone https://github.com/diana-spieser/My-invest.git
+  ```
+  
+2. Change the project directory
 
-   ```bash
-   git clone https://github.com/evgenia-manolova/portfolio-rh.git
-2. Navigate to the project directory:
-   ```bash
-   cd portfolio-rh
+ ```bash
+  cd My-invest
+```
 
-3. Launch the rails server
+3. Create , seed, migrathe your db
 
-   ```bash
-   rails server
+ ```bash
+  rails db:create db:seed db:migrate
+```
 
+4.Start the server
 
-4. Enjoy
+```bash
+  rails server 
+```
+
+5. Starn yarn
+   
+ ```bash
+   yarn build --watch
+```
+
+5.Happy hacking!
 
 
 
